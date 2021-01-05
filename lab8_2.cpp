@@ -1,7 +1,16 @@
 #include<iostream>
 using namespace std;
 
-//Write the function printO() here
+void printO (int height,int width){
+	if (height>0 && width>0){
+		for (int lineCount=0;lineCount<height;lineCount++){
+			for (int letterCount=0;letterCount<width;letterCount++){
+				cout << "O";
+			}
+			cout << endl;
+		}
+	}else cout << "Invalid input";
+}
 
 int main(){
 	
